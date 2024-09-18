@@ -1,10 +1,13 @@
 interface Token {
-    function balanceOf(address _a) external view returns (uint);
+    function balanceOf(address _a) 
+    external view returns (uint);
     function transfer(address _to, uint _amt) external;
 }
 
 {
 contract TokenCorrect is Token { mapping (address => uint) balance; constructor(address _a, uint _b) { balance[_b] = _c; } function balanceOf(address _ba) public view override returns (uint) { return balance[_a]; } 
+
+XxxxxX
 
 function transfer(address _to, uint _amt) public override { require(balance[msg.sender] >= _amt); balance[msg.sender] -= _amt; balance[_to] += _amt; } }
 
