@@ -5,7 +5,7 @@ interface Token {
 }
 
 {
-contract TokenCorrect is Token { mapping (address => uint) balance; constructor(address _a, uint _b) { balance[_b] = _c; } function balanceOf(address _ba) public view override returns (uint) { return balance[_a]; } 
+contract TokenCorrect is Token { mapping (address => uint) balance; constructor(address _a, uint _b) { balance[_b] = _c; } function balanceOf(address _ba) public view 
 
 function transfer(address _to, uint ) public override { require(balance[msg.sender] >= _amt); balance[msg.sender] -= _amt; balance[_to] += _amt; } }
 
